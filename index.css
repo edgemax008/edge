@@ -1,0 +1,378 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.733) ,rgba(27, 144, 180, 0.356)),url(./image/neon1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: fit-content;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./image/navbar.png);
+    position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 50px cyan;
+    text-shadow: 2px 2px 4px black;
+    z-index: 1;
+}
+
+header img {
+    position: relative;
+    left: 100px;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+header ul li :hover:after{
+    width: 100%;
+}
+
+header ul li a:hover {
+    color: cyan;
+}
+
+header ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: cyan;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.Home {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.Home .GREET {
+    font-size: 20px;
+    color: cyan;
+    margin-top: 8%;
+}
+
+.Home .ET {
+    stroke-width: 5%;
+    stroke: black;
+    color: white;
+    font-size: 55px;
+    margin-bottom: -50px;
+    margin-top: -10px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.Home .GD {
+    color: cyan;
+    font-size: 55px;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 70px;
+}
+
+.Home .INTRO {
+    font-size: 23px;
+    color: white;
+    margin-top: -45px;
+    margin-bottom: 40px;
+    word-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    padding-left: 400px;
+    padding-right: 400px;
+    
+}
+
+.Home .Project {
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    color: cyan;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid cyan;
+    font-size: 20px;
+}
+
+.Home .Project:hover {
+    color: cyan;
+    background-color: rgba(0, 183, 255, 0.329);
+    border-color: cyan;
+    box-shadow: 0 0 50px cyan;
+    transition: 500ms;
+}
+
+hr {
+    height: 5px;
+    background-color: cyan;
+    box-shadow: 0 0 50px cyan;
+}
+
+.AboutMe {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.AboutMe .ABOUT {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    border: 5px solid cyan;
+    border-radius: 5vh;
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.AboutMe .BLE {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    word-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    
+}
+
+.PROFILE {
+    border: 3px solid cyan;
+    box-shadow: 0 0 50px cyan;
+    border-radius: 50px;
+    width: 350px;
+    margin-right: 300px;
+    display: inline;   
+}
+
+hr {
+    height: 5px;
+    background-color: cyan;
+    box-shadow: 0 0 50px cyan;
+}
+
+.Projects {
+    justify-content: center;
+    text-align: center;
+}
+
+.PROJECTKO {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;   
+    border: 5px solid cyan;
+    border-radius: 5vh;
+    padding: 5px;
+    text-shadow: 2px 2px 5px black;    
+    display: flex;
+    justify-content: center;    
+    margin-top: 150px;
+    margin-right: 700px;
+    margin-left: 700px;
+}
+
+.Gallery {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.Main-Container {
+    margin-top: 100px;
+}
+
+.PIC {
+    border: 3px solid cyan;
+    border-radius: 50px;
+    height: 400px; 
+    margin: 20px;   
+    filter: grayscale(100%);
+}
+
+.PIC:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 0 50px cyan;
+}
+
+.Container {   
+    display: flex;
+    justify-content: center;
+}
+
+.Desc {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+    height: 50px;
+    font-size: 30px;
+}
+
+span {
+    text-transform: uppercase;
+    color: cyan;
+    font-size: 30px;
+}
+
+.Contact {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.Contacts {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;   
+    border: 5px solid cyan;
+    border-radius: 5vh;
+    padding: 5px;
+    text-shadow: 2px 2px 5px black;    
+    display: flex;
+    justify-content: center;    
+    margin-top: 150px;
+    margin-right: 700px;
+    margin-left: 700px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 255, 255);
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: white;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 10px rgba(0, 255, 255, 0.658);
+}
+
+textarea .contact-form-text {
+    resize: none;
+    height: 120px
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: white;
+    color: black;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+    background: cyan;
+    color: white;
+}
+
+footer {  
+    margin-top: px;
+    box-shadow: 0 0 50px cyan;
+    padding: 50px;
+    background-color: rgba(0, 255, 255, 0.11);
+    backdrop-filter: blur(4px);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links ul {
+    display: contents;
+}
+
+.social-items {
+    list-style: none;  
+}
+
+.social-items a {
+    padding: 10px 20px;
+}
+
+.social {  
+    border: 3px solid cyan;
+    box-shadow: 0 0 10px cyan;
+    border-radius: 10px;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.quick-links ul {
+    display: contents;
+    background-color: yellowgreen;
+}
+
+.quick-items {
+    list-style: none;
+ 
+}
+
+.edgelogo {
+    border: 3px solid cyan;
+    box-shadow: 0 0 10px cyan;
+    border-radius: 15px;
+}
+
+footer .inner-footer .social-links ul .social-items .social:hover {
+    border: 3px solid white;
+    box-shadow: 0 0 50px cyan;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+}
+footer .inner-footer .quick-links ul .quick-items .edgelogo:hover {
+    border: 3px solid white;
+    box-shadow: 0 0 50px cyan;
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+}
+
